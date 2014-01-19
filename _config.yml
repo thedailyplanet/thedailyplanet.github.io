@@ -1,3 +1,4 @@
 name: The Daily Planet
 markdown: redcarpet
 pygments: true
+permalink: /:year/:month::day/:title.html

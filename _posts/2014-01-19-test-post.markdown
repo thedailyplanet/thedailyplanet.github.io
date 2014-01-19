@@ -2,7 +2,7 @@
 layout: post
 title:  "The very first post!"
 date:   2014-01-19 18:40:33
-categories: jekyll update
+categories: testing jekyll
 ---
 
 This will be the very first post... A lazy Sunday afternoon kinda post.
