@@ -2,3 +2,8 @@ name: The Daily Planet
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
+metadata:
+  _posts:
+    - name: "layout"
+    - title: "edit me!"
+    - date: "YYYY-MM-DD HH-MM-SS"
