@@ -2,18 +2,19 @@ name: The Daily Planet
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
-metadata:
-  _posts:
-    - name: "layout"
-      field:
-        element: "hidden"
-        value: "blog"
-    - name: "title"
-      field:
-        element: "hidden"
-        value: "edit me!"
-    - name: "date"
-      field:
-        element: "hidden"
-        value: "YYYY-MM-DD HH-MM-SS"
+prose:
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "hidden"
+          value: "edit me!"
+      - name: "date"
+        field:
+          element: "hidden"
+          value: "YYYY-MM-DD HH-MM-SS"
 
