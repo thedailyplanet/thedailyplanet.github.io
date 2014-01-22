@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Messing with markdown
-date: {}
+date: 2014-01-20 19:12:34
 categories: testing jekyll
 tags: testing
 published: true
