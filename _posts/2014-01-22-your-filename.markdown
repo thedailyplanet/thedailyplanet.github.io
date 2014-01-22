@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Testing posting via prose.io"
-date:   2014-01-22 00:26:31
+title: Testing posting via prose.io
+date: {}
 categories: jekyll testing
+published: true
 ---
 
 ## A New Post
