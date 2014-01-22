@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Testing posting via prose.io
-date: {}
+date: 2014-01-22 15:10:31
 categories: jekyll testing edit
 ---
 
