@@ -17,3 +17,9 @@ prose:
           label: "Post Category"
           placeholder: "Create or choose"
           alterable: true
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          alterable: true
