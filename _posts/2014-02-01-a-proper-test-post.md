@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: A proper test post
 categories: 
   - testing
