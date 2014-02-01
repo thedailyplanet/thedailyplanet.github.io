@@ -8,7 +8,7 @@ prose:
       - name: "title"
         field:
           element: "hidden"
-          value: "edit me! r!"
+          value: "edit me!"
       - name: "date"
         field:
           element: "hidden"
