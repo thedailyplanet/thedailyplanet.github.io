@@ -13,3 +13,9 @@ prose:
         field:
           element: "hidden"
           value: "YYYY-MM-DD HH-MM-SS"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Post Category"
+          placeholder: "Create or choose"
+          alterable: true
