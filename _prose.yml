@@ -7,12 +7,11 @@ prose:
           value: "blog"
       - name: "title"
         field:
-          element: "hidden"
           value: "edit me!"
       - name: "date"
         field:
-          element: "hidden"
           value: "YYYY-MM-DD HH-MM-SS"
+          alterable: true
       - name: "categories"
         field:
           element: "multiselect"
