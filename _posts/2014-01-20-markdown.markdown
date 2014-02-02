@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Messing with markdown
-date: 2014-01-20 19:12:34
-categories: testing jekyll
+date: 2014-01-20T19:12:34.000Z
+categories: 
+  - arbitrary_category
+  - testing jekyll
 tags: testing
 published: true
 ---
