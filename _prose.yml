@@ -23,3 +23,9 @@ prose:
           label: "Add Tags"
           placeholder: "Choose Tags"
           alterable: true
+      - name: "author"
+        field:
+          element: "text"
+          label: "author"
+          placeholder: "your name"
+          value: ""
