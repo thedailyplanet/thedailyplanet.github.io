@@ -3,7 +3,6 @@ layout: post
 title: Messing with markdown
 date: 2014-01-20T19:12:34.000Z
 categories: 
-  - ""
   - testing jekyll
 tags: testing
 published: true
