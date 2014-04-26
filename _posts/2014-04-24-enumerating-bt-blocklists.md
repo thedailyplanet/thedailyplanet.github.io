@@ -16,7 +16,7 @@ A line of code later...
 for i in `grep ^0 hosts.txt | awk '{print $2}'`; do host -t a $i |grep 213.120.234.1[40][69] > blocked.txt ; done && awk '{print $1}' blocked.txt | sort -u > blocked-hosts.txt
 ```
 
-No error checking, but this is quick n dirty proof of concept... We run this three times, having adjusted the level of filtering between each run. 
+No error checking, but this is quick n dirty proof of concept... We run this three times, having adjusted the level of filtering between each run. A further addition of a few hundred social networking sites and we have four output files. Diffs against them reveal which hosts are added at each increment in blocking level.
 
 ```
 $ wc -l *
@@ -29,7 +29,7 @@ $ wc -l *
   8024 total
 ```
 
-
+Wow! That's about 3200 domains proven to be blocked, across the varying filter levels... Now, where's that Alexa top million sites list...
 
 
 
