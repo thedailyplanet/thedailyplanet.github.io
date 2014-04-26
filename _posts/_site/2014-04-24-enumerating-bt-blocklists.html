@@ -1,0 +1,20 @@
+<h2 id="enumerating_bt_block_lists">Enumerating BT block lists</h2>
+
+<p>I had a thought this morning. Back in the day I used to filter ads at the DNS level by running a caching name server and feeding it a zone file drawn from a list of dodgy ad sites. This list is published with this in mind, but is in the format of an /etc/hosts file. A little tweaking and it serves nicely as zone file usable by BIND.</p>
+
+<p>Having been thinking about the topic of ISP-level internet filtering a great deal of late, I’d been wondering how to reverse engineer the block lists, and this morning I remembered the existence of this <a href="http://winhelp2002.mvps.org/hosts.txt">hosts file</a>.. why not feed the list of hosts contained therein to BT’s name servers and grep for responses indicating the site is blocked?</p>
+
+<p>A line of code later</p>
+
+<pre><code>for i in `grep ^0 hosts.txt | awk '{print $2}'`; do host -t a $i |grep 213.120.234.1[40][69] &gt; blocked.txt ; done &amp;&amp; awk '{print $1}' blocked.txt | sort -u &gt; blocked-hosts.txt</code></pre>
+
+<p>No error checking, but this is quick n dirty proof of concept… We run this three times, having adjusted the level of filtering between each run.</p>
+
+<pre><code>$ wc -l *
+  1345 blocked-light.hosts.txt
+  1722 blocked-moderate.hosts.txt
+   377 blocked-moderate-increment.txt
+   105 blocked-social-strict.hosts.txt
+  3096 blocked-strict.hosts.txt
+  1379 blocked-strict.increment.txt
+  8024 total</code></pre>
