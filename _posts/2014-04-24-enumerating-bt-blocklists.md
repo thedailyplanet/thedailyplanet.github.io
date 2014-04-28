@@ -8,7 +8,7 @@ title: Enumerating BT block lists
 
 I had a thought this morning. Back in the day I used to filter ads at the DNS level by running a caching name server and feeding it a zone file drawn from a list of dodgy ad sites. This list is published with this in mind, but is in the format of an /etc/hosts file. A little tweaking and it serves nicely as zone file usable by BIND.
 
-Having been thinking about the topic of ISP-level internet filtering a great deal of late, I'd been wondering how to reverse engineer the block lists, and this morning I remembered the existence of this [hosts file](http://winhelp2002.mvps.org/hosts.txt).. why not feed the list of hosts contained therein to BT's name servers and grep for responses indicating the site is blocked?
+Having been thinking about the topic of ISP-level internet filtering a great deal of late, I'd been wondering how to reverse engineer the block lists, and this morning I remembered the existence of this [hosts file](http://winhelp2002.mvps.org/hosts.txt).. BT censor internet domains by returning an A record pointing to a webserver which redirects to their 'blocked' page, so why not feed the list of hosts contained therein to BT's name servers and grep for responses indicating the site is blocked?
 
 A line of code later...
 
