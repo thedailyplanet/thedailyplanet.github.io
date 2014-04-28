@@ -1,7 +1,6 @@
 ---
 layout: post
 published: true
-title: Enumerating BT block lists
 ---
 
 ## Enumerating BT block lists
