@@ -1,9 +1,8 @@
 ---
 layout: post
 published: true
+title: Enumerating BT block lists
 ---
-
-## Enumerating BT block lists
 
 I had a thought this morning. Back in the day I used to filter ads at the DNS level by running a caching name server and feeding it a zone file drawn from a list of dodgy ad sites. This list is published with this in mind, but is in the format of an /etc/hosts file. A little tweaking and it serves nicely as zone file usable by BIND.
 
