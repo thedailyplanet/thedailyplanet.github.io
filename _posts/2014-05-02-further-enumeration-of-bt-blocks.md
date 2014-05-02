@@ -41,6 +41,10 @@ www.oracle.com has address 2.21.118.140
 At which point, your traffic goes straight to oracle. Let's try another host:
 
 ```
+$ host -ta www.gtv8.org
+www.gtv8.org is an alias for virtual-colonelk.gbnet.net.
+virtual-colonelk.gbnet.net has address 213.120.234.146
+virtual-colonelk.gbnet.net has address 213.120.234.109
 $ nc -v 213.120.234.109 80
 sspi02.sspi.bt.net [213.120.234.109] 80 (www) open
 GET / HTTP/1.1
