@@ -56,14 +56,7 @@ Date: Fri, 02 May 2014 07:34:56 GMT
 Server: Apache/2.2.19 (Unix) PHP/5.3.6 mod_ssl/2.2.19 OpenSSL/1.0.0d
 X-Powered-By: PHP/5.3.6
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<snip>
-
 <p>Welcome to gtv8.org; there's nothing to see here.</p>
-</body>
-</html>
 ```
 
 So that's nice, they've proxied my traffic with my asking.
