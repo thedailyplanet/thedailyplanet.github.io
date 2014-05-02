@@ -29,8 +29,6 @@ Location: http://www.oracle.com/
 Server: BigIP
 
 ^C
-$ host -ta www.oracle.com
-www.oracle.com has address 2.21.118.140
 ```
 
 So wait, a DNS redirect to those hosts does not necessarily mean the site is blocked. Following the HTTP redirect we see:
@@ -42,7 +40,6 @@ www.oracle.com has address 2.21.118.140
 
 At which point, your traffic goes straight to oracle. Let's try another host:
 
-```
 $ nc -v 213.120.234.109 80
 sspi02.sspi.bt.net [213.120.234.109] 80 (www) open
 GET / HTTP/1.1
@@ -56,7 +53,6 @@ Server: Apache/2.2.19 (Unix) PHP/5.3.6 mod_ssl/2.2.19 OpenSSL/1.0.0d
 X-Powered-By: PHP/5.3.6
 
 <p>Welcome to gtv8.org; there's nothing to see here.</p>
-```
 
 
 So that's nice, they've proxied my traffic with my asking.
