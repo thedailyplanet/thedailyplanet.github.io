@@ -59,7 +59,7 @@ X-Powered-By: PHP/5.3.6
 
 ```
 
-So that's nice, they've proxied my traffic with my asking.
+So that's nice, they've proxied my traffic without my asking.
 
 A blocked site will produce the following:
 
