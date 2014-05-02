@@ -6,7 +6,7 @@ title: Further Enumeration of BT block lists
 
 Over breakfast this morning I kicked off a run through feeding the Alexa top 10k hosts to BT's nameservers to detect blocking. Idly watching the output whilst munching breakfast I noticed some apparently innocuous sites resolve to the BT blocking HTTP servers, so decided to investigate further...
 
-Oracle, those wonderful people responsible for giving us such delights as Java and Solaris, seemed an odd choice to block, but sure enough, BT's name servers point you at the two proxies responsible for redirecting our innocent youth their blocked pages.
+Oracle, those wonderful people responsible for giving us such delights as Java and Solaris, seemed an odd choice to block, but sure enough, BT's name servers point you at the two proxies responsible for protecting our innocent youth from the horrors of freedom of expression:
 
 ```
 $ host -ta oracle.com
@@ -59,18 +59,9 @@ X-Powered-By: PHP/5.3.6
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>gtv8.org</title>
-</head>
-<!-- Background white, links blue (unvisited), navy (visited), red
-(active) -->
-<body bgcolor="#FFFFFF" text="#000000" link="#0000FF"
-vlink="#000080" alink="#FF0000">
-
+<snip>
 
 <p>Welcome to gtv8.org; there's nothing to see here.</p>
-
-
 </body>
 </html>
 ```
