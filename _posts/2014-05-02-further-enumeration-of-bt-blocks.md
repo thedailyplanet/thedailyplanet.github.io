@@ -44,7 +44,6 @@ At which point, your traffic goes straight to oracle. Let's try another host:
 
 ```
 $ nc -v 213.120.234.109 80
-Warning: forward host lookup failed for sspi02.sspi.bt.net: Unknown host : Connection timed out
 sspi02.sspi.bt.net [213.120.234.109] 80 (www) open
 GET / HTTP/1.1
 Host: www.gtv8.org
@@ -58,6 +57,7 @@ X-Powered-By: PHP/5.3.6
 
 <p>Welcome to gtv8.org; there's nothing to see here.</p>
 ```
+
 
 So that's nice, they've proxied my traffic with my asking.
 
