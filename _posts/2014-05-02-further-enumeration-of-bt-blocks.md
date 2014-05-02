@@ -53,7 +53,6 @@ Date: Fri, 02 May 2014 07:34:56 GMT
 Server: Apache/2.2.19 (Unix) PHP/5.3.6 mod_ssl/2.2.19 OpenSSL/1.0.0d
 X-Powered-By: PHP/5.3.6
 
-<p>Welcome to gtv8.org; there's nothing to see here.</p>
 ```
 
 So that's nice, they've proxied my traffic with my asking.
